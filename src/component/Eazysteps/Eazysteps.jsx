@@ -1,11 +1,12 @@
 import React from "react";
 
 import image from "../../assets/easy.jpg";
+
 const Eazysteps = () => {
   return (
     <>
       <div
-        className="px-10 md:px-14 lg:px-20 text-white mx-auto "
+        className=" px-2 md:px-14 lg:px-20 text-white mx-auto "
         id="eazy-step"
       >
         <section
