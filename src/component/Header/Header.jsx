@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="py-6 top-0  bg-white opacity-90 shadow-lg z-50 text-black sticky backdrop-blur-0">
+      <section className="py-6  top-0 bg-white opacity-90 shadow-lg z-50 text-black sticky backdrop-blur-0">
         <div className="container flex mx-auto justify-between px-20">
           <span className=" text-xl md:text-2xl font-bold text-[#43010b] ">
             Biz-mAnGer
@@ -49,7 +49,7 @@ const Header = () => {
                 duration={500}
               >
                 {" "}
-                FaQ
+                Start Now
               </Link>
             </ul>
           </nav>
@@ -76,7 +76,7 @@ const Header = () => {
       {toggle && (
         <>
           {" "}
-          <nav className="lg:hidden text-2xl ">
+          <nav className="lg:hidden text-2xl " data-aos="fade-down">
             {" "}
             <div className="absolute bg-white opacity-100 h-[50%]  grid grid-cols-1 place-items-center w-full z-50 ">
               <div className="grid grid-cols-1 place-items-center">
@@ -116,7 +116,6 @@ const Header = () => {
                     onClick={() => toggleState()}
                   >
                     {" "}
-                    FaQ
                   </Link>
                   <a href="/">
                     <button className="rounded-2xl px-4 text-center bg-[#fa9608] py-1 text-white hover:animate-pulse hover:cursor-pointer">

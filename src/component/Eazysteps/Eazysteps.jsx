@@ -5,70 +5,49 @@ import image from "../../assets/easy.jpg";
 const Eazysteps = () => {
   return (
     <>
-      <div
-        className=" px-2 md:px-14 lg:px-20 text-white mx-auto "
-        id="eazy-step"
-      >
-        <section
-          className="px-2 md:px-16 py-4 md:py-8 mx-auto md:[5rem] bg-[#20274d] rounded-[1rem] grid lg:grid-cols-2 gap-8 lg:justify-center items-center mt-6"
-          data-aos="zoom-in-up"
-        >
-          <div className="grid gap-16 justify-center">
-            <h2 className="text-3xl text-center sm:text-4xl lg:text-5xl lg:text-left font-bold">
-              Three Eazy Steps
+      <section id="eazy-step" className="md:px-16 lg:px-20 mt-16 md:mt-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-4 ">
+          <div className="text-2xl">
+            <h2
+              data-aos="fade-right"
+              className=" text-lg text-center md:text-left md:text-2xl text-[#43010b] font-bold leading-10"
+            >
+              {" "}
+              Do more with your Business. <br />
+              Get BisManger Today
             </h2>
-            <div className="grid gap-15">
-              <div className="flex gap-4 justify-center">
-                <div class="flex-shrink-0 h-12 w-12 flex justify-center bg-[#c97884] items-center text-2xl font-bold rounded-full">
-                  1
-                </div>
-                <div class="grid gap-2">
-                  <h3 class="md:text-xl">Browse businesses &amp; share link</h3>
-                  <p class="text-sm md:text-base max-w-md">
-                    All you need is to check for businesses &amp; share their
-                    links to your audiences on all platforms
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid gap-15">
-              <div className="flex gap-4 justify-center">
-                <div class="flex-shrink-0 h-12 w-12 flex justify-center bg-[#c97884] items-center text-2xl font-bold rounded-full">
-                  2
-                </div>
-                <div class="grid gap-2">
-                  <h3 class="md:text-xl">Browse businesses &amp; share link</h3>
-                  <p class="text-sm md:text-base max-w-md">
-                    All you need is to check for businesses &amp; share their
-                    links to your audiences on all platforms
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid gap-15">
-              <div className="flex gap-4 justify-center">
-                <div class="flex-shrink-0 h-12 w-12 flex justify-center bg-[#c97884] items-center text-2xl font-bold rounded-full">
-                  3
-                </div>
-                <div class="grid gap-2">
-                  <h3 class="md:text-xl">Browse businesses &amp; share link</h3>
-                  <p class="text-sm md:text-base max-w-md">
-                    All you need is to check for businesses &amp; share their
-                    links to your audiences on all platforms
-                  </p>
-                </div>
-              </div>
+            <p
+              data-aos="fade-right"
+              className=" text-[0.8rem] md:text-base mt-4 text-center md:text-left"
+            >
+              Download the BizManger App Today and Begin your <br />
+              Business growth Today
+            </p>
+            <div
+              className="flex flex-row gap-2 mt-10 justify-center items-center md:justify-start 
+              "
+              data-aos="fade-left"
+            >
+              <img
+                src="https://luca.africa/_next/static/image/src/Assets/Images/button1.739d246165928b415b985aa27a9fd8a5.svg?imwidth=640"
+                alt="applestore"
+                className="w-[130px]  md:w-[150px]"
+              />
+              <img
+                src="https://luca.africa/_next/static/image/src/Assets/Images/button2.1e94410b3309e73af6c93ad58b94e602.svg?imwidth=640"
+                alt="downladpic"
+                className="w-[130px]  md:w-[150px]"
+              />
             </div>
           </div>
-          <div className="rounded-[2rem] shadow-2xl mx-auto">
+          <div className=" w-[70%] flex justify-center items-center mx-auto md:w-[100%]">
             <img
-              src={image}
-              alt="Steps_Image"
-              className="rounded-2xl h-[40rem]"
+              src="https://luca.africa/_next/static/image/src/Assets/Images/download-app.428491e8d6331b8d24948409feeddbaa.svg?imwidth=1920"
+              className="mb-0 rounded-lg"
             />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 };
