@@ -15,9 +15,9 @@ const Hero = () => {
       >
         <section className="grid md:grid-cols-2 md:justify-between md:items-center h-[80%] mx-auto justify-center">
           <div data-aos="fade-in">
-            <h1 className="font-bold md:text-left text-center text-[1.5rem] text-black lg:text-[2rem] md:text-[1.5rem]">
-              Manage All your Business Operations with{" "}
-              <p className=" text-[#43010b]"> Kiosk </p>
+            <h1 className="font-bold md:text-left text-center text-4xl sm:text-5xl md:text-6xl  ">
+              Manage All your Business Operations <br /> with{" "}
+              <span className=" text-[#43010b]"> Kiosk </span>
             </h1>
             <p className="text-base mt-6 md:text-left text-center max-w-xl  text-slate-500 mx-auto md:mx-0">
               keep all your business records, customers, inventory, orders, and

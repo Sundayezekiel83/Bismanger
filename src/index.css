@@ -1,8 +1,16 @@
-#root {
+body,
+html {
   margin-top: 0;
   box-sizing: border-box;
+  font-family: "SF Pro Text", sans-serif;
 }
-
+@font-face {
+  font-family: "SF-Pro-Text-Light.otf";
+  src: url(../public/SF-Pro-Text-Light.otf);
+}
+.font {
+  font-family: SF-Pro-Text-Light;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

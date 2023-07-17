@@ -10,13 +10,11 @@ const Header = () => {
 
   return (
     <>
-      <section className="py-6  top-0 bg-white opacity-90 shadow-lg z-50 text-black sticky backdrop-blur-0">
-        <div className="container flex mx-auto justify-between px-20">
-          <span className=" text-xl md:text-2xl font-bold text-[#43010b] ">
-            Biz-mAnGer
-          </span>
-          <nav className="hidden lg:block">
-            <ul className="grid grid-cols-4 lg:gap-12 font-bold text-base hover:cursor-pointer">
+      <section className="py-6  px-10  top-0 bg-white flex shadow-lg z-50 sticky backdrop-blur-0 lg:px-20">
+        <div className="container flex mx-auto space-x-7 sm:justify-between items-center">
+          <p className=" text-2xl font-bold text-[#43010b]">BizManger</p>
+          <div className="hidden lg:flex lg:text-tiny w-full items-center justify-between pt-1">
+            <ul className="grid grid-cols-3 items-center hover:cursor-pointer">
               <Link
                 className="hover:text-[#fa9608]"
                 to="home"
@@ -52,24 +50,25 @@ const Header = () => {
                 Start Now
               </Link>
             </ul>
-          </nav>
-
-          <span className="rounded-2xl text-white px-4 text-center bg-[#fa9608] py-1 hidden lg:block hover:animate-pulse hover:cursor-pointer">
-            Download BizManger
-          </span>
-          <div className="lg:hidden">
-            {toggle ? (
-              <AiOutlineClose
-                onClick={() => toggleState()}
-                className="text-3xl font-bold"
-              />
-            ) : (
-              <AiOutlineMenu
-                onClick={() => toggleState()}
-                className="text-3xl font-bold"
-              />
-            )}
+            <div>
+              <button className="rounded-2xl text-white px-4 text-center bg-[#fa9608] py-1 hidden lg:block hover:animate-pulse hover:cursor-pointer">
+                Download BizManger
+              </button>
+            </div>
           </div>
+        </div>
+        <div className="lg:hidden">
+          {toggle ? (
+            <AiOutlineClose
+              onClick={() => toggleState()}
+              className="text-3xl font-bold"
+            />
+          ) : (
+            <AiOutlineMenu
+              onClick={() => toggleState()}
+              className="text-3xl font-bold"
+            />
+          )}
         </div>
       </section>
       {/* Mobile View */}
@@ -78,7 +77,7 @@ const Header = () => {
           {" "}
           <nav className="lg:hidden text-2xl " data-aos="fade-down">
             {" "}
-            <div className="absolute bg-white opacity-100 h-[50%]  grid grid-cols-1 place-items-center w-full z-50 ">
+            <div className="absolute bg-white opacity-100 h-[100%]  grid grid-cols-1 place-items-center w-full z-50 ">
               <div className="grid grid-cols-1 place-items-center">
                 <ul className="text-lg font-bold grid grid-cols-1 place-items-center text-center space-y-3">
                   <Link
@@ -115,7 +114,7 @@ const Header = () => {
                     duration={500}
                     onClick={() => toggleState()}
                   >
-                    {" "}
+                    Start Now
                   </Link>
                   <a href="/">
                     <button className="rounded-2xl px-4 text-center bg-[#fa9608] py-1 text-white hover:animate-pulse hover:cursor-pointer">

@@ -7,6 +7,7 @@ import Eazysteps from "./component/Eazysteps/Eazysteps";
 import Footer from "./component/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./index.css";
 
 function App() {
   useEffect(() => {
@@ -15,7 +16,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white SF-Pro-Text-Light.otf">
         <Header />
         <Hero />
         <About />

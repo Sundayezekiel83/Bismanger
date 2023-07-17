@@ -18,7 +18,7 @@ const About = () => {
           <br />
           using it shouldnt be difficult
         </p>
-        <div className="grid lg:grid-cols-2 gap-4 mt-10">
+        <div className="grid lg:grid-cols-2 lg:gap-3 mt-10 gap-6">
           {/* features 1 */}
           <div data-aos="fade-left">
             <Features
